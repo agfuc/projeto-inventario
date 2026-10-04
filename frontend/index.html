@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventário - Estoques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Inventário</h1>
+        <p>Bem-vindo ao sistema de inventário!</p>
+        
+        <!-- Formulário de cadastro de produtos -->
+        <div class="card">
+            <h2>Cadastro de Produtos</h2>
+            <form id="produtoForm">
+                <div class="form-grupo">
+                    <label for="nome_produto">Nome do Produto:</label>
+                    <input type="text" id="nome_produto" name="nome_produto" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="preco">Preço (R$):</label>
+                    <input type="number" step="0.01" id="preco" name="preco" required>
+                </div>
+                <button type="submit" class="btn-salvar">Cadastrar Produto</button>
+            </form>
+        </div>
+
+        <!-- Lista produtos cadastrados -->
+        <div class="card">
+            <h2>Lista de Produtos em Estoque</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Preço (R$)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaProdutos">
+                    <!-- Preenchido via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* Reset e Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 30px 20px;
+}
+
+/* Contentor Principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Blocos de Cartão (Cards) */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1e4e8;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+}
+
+/* Grupos de Formulário */
+.form-grupo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+/* Botão de Salvar */
+.btn-salvar {
+    background-color: #3182ce;
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+    margin-top: 5px;
+}
+
+.btn-salvar:hover {
+    background-color: #2b6cb0;
+}
+
+/* Tabela de Produtos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #2d3748;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+tr:hover {
+    background-color: #edf2f7;
+}
+
+td {
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+}
+
+/* Botão de Excluir */
+.btn-excluir {
+    background-color: #e53e3e;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-excluir:hover {
+    background-color: #c53030;
+}

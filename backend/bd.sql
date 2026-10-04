@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS produtos (
+    id INTERGER PRIMARY KEY AUTOINCREMENT,
+    nome_produto TEXT NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco REAL NOT NULL
+);

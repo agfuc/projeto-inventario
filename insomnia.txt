@@ -1,0 +1,17 @@
+insomnia
+
+post 
+http://localhost:3000/api/produtos
+{
+  "nome_produto": "Areia Média",
+  "quantidade": 100,
+  "preco": 65.00
+}
+
+
+get
+
+http://localhost:3000/api/produtos
+
+delete
+http://localhost:3000/api/produtos/1
